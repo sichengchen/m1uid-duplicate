@@ -4,7 +4,7 @@ You must install `libnfc` and `mfoc` to use this program. This program requires 
 
 ## Usage
 
-`m1uid-duplicate {-l|-u|-d} [<HEX_UID>]`
+`m1uid-duplicate {-l|-u|-U|-d} [<4B_UID_HEX>|<8B_UID_HEX>]`
 
 ### Examples
 
