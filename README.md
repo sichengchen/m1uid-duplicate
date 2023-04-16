@@ -1,5 +1,7 @@
 # m1uid-duplicate
 
+You must install `libnfc` and `mfoc` to use this program. This program requires root privileges to run properly.
+
 ## Usage
 
 `m1uid-duplicate {-l|-u|-d} [<HEX_UID>]`
@@ -22,4 +24,6 @@
   
     `m1uid-duplicate -d`
 
-You must install `libnfc` and `mfoc` to use this program. This program requires root privileges to run properly.
+## Buying Cards
+
+You can buy a "CUID" (UID Changeable) card from [Taobao (China)](https://s.taobao.com/search?q=CUID) or [Alibaba (Global)](https://www.alibaba.com/trade/search?searchText=CUID).
