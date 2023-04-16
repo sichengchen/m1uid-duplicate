@@ -56,7 +56,6 @@ def dump_from_card():
         with open('card.dump', 'rb') as f_in:
             data = f_in.read()
             uid = data[:8]
-            print('UID read:', hex(int.from_bytes(uid, byteorder='big')))
             os.remove('card.dump')
             return uid
     except Exception as e:
@@ -95,6 +94,7 @@ def main():
         elif sys.argv[1] == '-d':
             try:
                 uid = dump_from_card()
+                print('UID read:', hex(int.from_bytes(uid, byteorder='big')))
                 change_uid_from_template(uid)
                 input('Dump file generated, press any key to start writing...')
                 write_dump_to_card()
