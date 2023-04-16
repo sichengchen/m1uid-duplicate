@@ -10,9 +10,13 @@
   
     `m1uid-duplicate -l`
 
-- Directly write a specific UID into a new card:
+- Directly write a specific UID (4 bytes) into a new card:
   
-    `m1uid-duplicate -u <HEX_UID>`
+    `m1uid-duplicate -u <4B_UID_HEX>`
+
+- Directly write a specific UID (8 bytes) into a new card:
+
+    `m1uid-duplicate -U <8B_UID_HEX>`
     
 - Dump a card and write its UID into a new card:
   
